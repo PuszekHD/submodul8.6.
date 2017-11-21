@@ -7,8 +7,11 @@ var operate1 = (a * a) - (2 * a * b) + (b * b);
 var value = operate1;
 console.log(value);
 
-var plusOrMinus = value > 0 ? 'warunek dodatni' : 'warunek ujemny';
-console.log(plusOrMinus);
+if (value > 0) {
+    console.log('warunek dodatni');
+} else {
+    console.log('warunek ujemny')
+}
 
-var isItZero = value == 0 ? 'wynik równy 0' : 'wynik różny od 0';
+var isItZero = value === 0 ? 'wynik równy 0' : 'wynik różny od 0';
 console.log(isItZero);
